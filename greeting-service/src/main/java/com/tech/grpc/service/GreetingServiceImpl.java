@@ -16,7 +16,7 @@ public class GreetingServiceImpl extends GreetingServiceGrpc.GreetingServiceImpl
         System.out.println("The request is " + message);
 
         GreetingResponse greetingResponse = GreetingResponse.newBuilder().
-                setMessage("Recieved your message: "  + message + ": Hello from Server").
+                setMessage("Received your message: "  + message + ": Hello from Server").
                 build();
 
         responseObserver.onNext(greetingResponse);
